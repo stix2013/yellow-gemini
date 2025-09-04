@@ -5,6 +5,7 @@
     "fileFiltering": {
         "respectGitIgnore": true
     },
+    "preferredEditor": "vscode",
     "contextFileName": "AGENT.md",
     "chatCompression": {
         "contextPercentageThreshold": 0.6
