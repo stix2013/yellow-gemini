@@ -1,75 +1,62 @@
-# Nuxt Minimal Starter
+# Nuxt 4 Starter Project
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a Nuxt 4 project using Bun as the package manager.
 
-## Setup
+## Project Overview
 
-Make sure to install dependencies:
+This project is a starter for building Vue 3 applications with Nuxt 4. It's configured with the following Nuxt modules:
+
+*   **@nuxt/content:** For content-driven websites.
+*   **@nuxt/eslint:** For linting and code style.
+*   **@nuxt/image:** for image optimization.
+*   **@nuxt/scripts:** for managing third-party scripts.
+*   **@nuxt/test-utils:** For testing.
+*   **@nuxt/ui:** For UI components.
+
+The main application entry point is `app/app.vue`.
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have [Bun](https://bun.sh/) installed.
+
+### Installation
+
+Install the project dependencies:
 
 ```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
 bun install
 ```
 
-## Development Server
+### Development
 
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
+Start the development server:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+bun dev
 ```
 
-Locally preview production build:
+The application will be available at [http://localhost:3000](http://localhost:3000).
+
+### Production
+
+To build the application for production:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
+bun build
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+To preview the production build:
+
+```bash
+bun preview
+```
+
+## Development Conventions
+
+*   **Package Manager:** This project uses `bun`.
+*   **Linting:** ESLint is used for linting (`eslint.config.mjs`).
+*   **TypeScript:** The project uses TypeScript (`tsconfig.json`).
+*   **Routing:** File-based routing in the `app/pages` directory.
+*   **State Management:** Pinia stores are in the `app/stores` directory.
