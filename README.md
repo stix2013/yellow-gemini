@@ -53,6 +53,16 @@ To preview the production build:
 bun preview
 ```
 
+## Testing
+
+This project uses `vitest` for testing. Test files are located in the `tests` directory.
+
+To run the tests:
+
+```bash
+bun test
+```
+
 ## Development Conventions
 
 *   **Package Manager:** This project uses `bun`.
