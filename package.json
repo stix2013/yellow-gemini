@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "mcp": "DEBUG=nuxt:mcp:server,vite:mcp:server PORT=4000 nuxi dev",
-    "test": "vitest run tests/stores/** --no-threads --verbose",
+    "test": "vitest run tests/stores/** --verbose",
     "test:e2e": "vitest --config ./vitest.config.e2e.ts"
   },
   "dependencies": {
