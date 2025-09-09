@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     'nuxt-mcp',
     '@pinia/nuxt',
     '@nuxt/ui',
-    '@nuxt/icon'
+    '@nuxt/icon',
+    '@nuxt/fonts'
   ],
   css: ['~/assets/css/main.css']
 })

@@ -11,7 +11,23 @@ describe('App', async () => {
     expect(h1.text()).toContain('Build Your Next Idea Faster')
 
     // Check for the presence of a call-to-action button
-    const button = wrapper.find('a[role="button"]')
-    expect(button.text()).toContain('Get Started')
+    const button = wrapper.findComponent({ name: 'UButton', props: { label: 'Get Started' } })
+    expect(button.exists()).toBe(true)
+
+    // Check for the features section
+    const featuresSection = wrapper.find('#features')
+    expect(featuresSection.exists()).toBe(true)
+
+    // Check for the pricing section
+    const pricingSection = wrapper.find('#pricing')
+    expect(pricingSection.exists()).toBe(true)
+
+    // Check for the testimonials section
+    const testimonialsSection = wrapper.find('#testimonials')
+    expect(testimonialsSection.exists()).toBe(true)
+
+    // Check for the faq section
+    const faqSection = wrapper.find('#faq')
+    expect(faqSection.exists()).toBe(true)
   })
 })
