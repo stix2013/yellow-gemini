@@ -23,4 +23,11 @@ describe('Locale Store', () => {
     const store = useLocaleStore()
     expect(store.getLocale).toBe('en')
   })
+
+  it('should reflect locale changes in the getter', () => {
+    const store = useLocaleStore()
+    expect(store.getLocale).toBe('en')
+    store.setLocale('de')
+    expect(store.getLocale).toBe('de')
+  })
 })
