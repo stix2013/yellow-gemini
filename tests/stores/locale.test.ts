@@ -1,11 +1,14 @@
-
-import { setActivePinia, createPinia } from 'pinia'
+import { setActivePinia } from 'pinia'
+import { createTestingPinia } from '@pinia/testing'
 import { useLocaleStore } from '../../app/stores/locale'
-import { describe, it, expect, beforeEach } from 'vitest'
+import { describe, it, expect, beforeEach, vi } from 'vitest'
 
 describe('Locale Store', () => {
   beforeEach(() => {
-    setActivePinia(createPinia())
+    setActivePinia(createTestingPinia({
+      createSpy: vi.fn,
+      stubActions: false,
+    }))
   })
 
   it('should have a default locale of "en"', () => {

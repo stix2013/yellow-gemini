@@ -16,7 +16,7 @@
       },
       "devDependencies": {
         "@nuxt/test-utils": "^3.19.2",
-        "@pinia/testing": "^0.1.7",
+        "@pinia/testing": "^1.0.2",
         "@vue/test-utils": "^2.4.6",
         "happy-dom": "^18.0.1",
         "nuxt-mcp": "^0.2.4",
@@ -368,7 +368,7 @@
 
     "@pinia/nuxt": ["@pinia/nuxt@0.11.2", "", { "dependencies": { "@nuxt/kit": "^3.9.0" }, "peerDependencies": { "pinia": "^3.0.3" } }, "sha512-CgvSWpbktxxWBV7ModhAcsExsQZqpPq6vMYEe9DexmmY6959ev8ukL4iFhr/qov2Nb9cQAWd7niFDnaWkN+FHg=="],
 
-    "@pinia/testing": ["@pinia/testing@0.1.7", "", { "dependencies": { "vue-demi": "^0.14.10" }, "peerDependencies": { "pinia": ">=2.2.6" } }, "sha512-xcDq6Ry/kNhZ5bsUMl7DeoFXwdume1NYzDggCiDUDKoPQ6Mo0eH9VU7bJvBtlurqe6byAntWoX5IhVFqWzRz/Q=="],
+    "@pinia/testing": ["@pinia/testing@1.0.2", "", { "peerDependencies": { "pinia": ">=3.0.3" } }, "sha512-yZVXJTKh677J0AT8kOPxGk5s1v7hMQIDT3tmeriwtR5LDu41DvXTEBQf0ql9SsHW1mCSDG38QDFzSSl5ucJqnQ=="],
 
     "@pkgjs/parseargs": ["@pkgjs/parseargs@0.11.0", "", {}, "sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg=="],
 
