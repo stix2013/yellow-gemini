@@ -107,7 +107,7 @@
     >
       <template #links>
         <UButton to="/getting-started" label="Get Started" size="xl" />
-        <UButton to="/components" label="Explore Components" size="xl" color="gray" />
+        
       </template>
     </UPageHero>
 
