@@ -1,0 +1,63 @@
+{
+  "sessionMetrics": {
+    "models": {
+      "": {
+        "api": {
+          "totalRequests": 7,
+          "totalErrors": 0,
+          "totalLatencyMs": 57275
+        },
+        "tokens": {
+          "prompt": 82968,
+          "candidates": 3115,
+          "total": 89479,
+          "cached": 31858,
+          "thoughts": 3396,
+          "tool": 0
+        }
+      }
+    },
+    "tools": {
+      "totalCalls": 2,
+      "totalSuccess": 2,
+      "totalFail": 0,
+      "totalDurationMs": 16626,
+      "totalDecisions": {
+        "accept": 1,
+        "reject": 0,
+        "modify": 0,
+        "auto_accept": 1
+      },
+      "byName": {
+        "read_file": {
+          "count": 1,
+          "success": 1,
+          "fail": 0,
+          "durationMs": 35,
+          "decisions": {
+            "accept": 0,
+            "reject": 0,
+            "modify": 0,
+            "auto_accept": 1
+          }
+        },
+        "write_file": {
+          "count": 1,
+          "success": 1,
+          "fail": 0,
+          "durationMs": 16591,
+          "decisions": {
+            "accept": 1,
+            "reject": 0,
+            "modify": 0,
+            "auto_accept": 0
+          }
+        }
+      }
+    },
+    "files": {
+      "totalLinesAdded": 239,
+      "totalLinesRemoved": 6
+    }
+  }
+}
