@@ -1,19 +1,19 @@
 {
-    "checkpointing": {
-        "enabled": true
-    },
-    "fileFiltering": {
-        "respectGitIgnore": true
-    },
-    "preferredEditor": "vscode",
-    "contextFileName": "AGENT.md",
-    "chatCompression": {
-        "contextPercentageThreshold": 0.6
-    },
-    "mcpServers": {
-        "nuxt-mcp": {
-            "type": "sse",
-            "url": "http://localhost:4000/__mcp/sse"
-        }
+  "chatCompression": {
+    "contextPercentageThreshold": 0.6
+  },
+  "checkpointing": {
+    "enabled": true
+  },
+  "contextFileName": "AGENT.md",
+  "fileFiltering": {
+    "respectGitIgnore": true
+  },
+  "mcpServers": {
+    "nuxt-mcp": {
+      "type": "sse",
+      "url": "http://localhost:4000/__mcp/sse"
     }
+  },
+  "preferredEditor": "vscode"
 }
