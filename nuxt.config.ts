@@ -5,11 +5,18 @@ export default defineNuxtConfig({
     enabled: false,
   },
   modules: [
-    'nuxt-mcp',
+    '@nuxt/test-utils/module',
     '@pinia/nuxt',
     '@nuxt/ui',
     '@nuxt/icon',
     '@nuxt/fonts'
   ],
-  css: ['~/assets/css/main.css']
+  css: ['~/assets/css/main.css'],
+  vite: {
+    optimizeDeps: {
+      include: [
+        'zod',
+      ]
+    }
+  }
 })

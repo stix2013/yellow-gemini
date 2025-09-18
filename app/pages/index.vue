@@ -1,26 +1,8 @@
 <script setup lang="ts">
   definePageMeta({
-    layout: 'landing'
+    layout: 'home'
   })
-
-  const links = [
-    {
-      label: 'Features',
-      to: '#features'
-    },
-    {
-      label: 'Pricing',
-      to: '#pricing'
-    },
-    {
-      label: 'Testimonials',
-      to: '#testimonials'
-    },
-    {
-      label: 'FAQ',
-      to: '#faq'
-    }
-  ]
+  
 
   const features = [
     {
@@ -92,15 +74,6 @@
 
 <template>
   <div>
-    <UHeader :links="links">
-      <template #logo>
-        <div class="flex items-center">
-          <img src="/icon.svg" class="h-8 w-8 mr-2" alt="Logo" />
-          <span>Nuxt UI</span>
-        </div>
-      </template>
-    </UHeader>
-
     <UPageHero
       title="Build Your Next Idea Faster"
       description="Nuxt UI is a component library for building beautiful and responsive web applications."
@@ -161,13 +134,5 @@
     >
       <UAccordion :items="faq" />
     </UPageSection>
-
-    <UFooter>
-      <template #left>
-        <p class="text-sm text-gray-500 dark:text-gray-400">
-          Copyright © {{ new Date().getFullYear() }}
-        </p>
-      </template>
-    </UFooter>
   </div>
 </template>

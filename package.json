@@ -9,26 +9,30 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "mcp": "DEBUG=nuxt:mcp:server,vite:mcp:server PORT=4000 nuxi dev",
-    "test": "vitest run tests/stores/** --verbose",
+    "test": "vitest --project nuxt",
     "test:e2e": "vitest --config ./vitest.config.e2e.ts"
   },
   "dependencies": {
+    "@iconify-json/lucide": "^1.2.68",
+    "@iconify-json/simple-icons": "^1.2.52",
+    "@internationalized/date": "^3.9.0",
     "@nuxt/fonts": "^0.11.4",
     "@nuxt/icon": "^2.0.0",
-    "@nuxt/ui": "^4.0.0-alpha.1",
+    "@nuxt/ui": "^4.0.0-alpha.2",
     "@pinia/nuxt": "^0.11.2",
-    "nuxt": "^4.1.1",
+    "nuxt": "^4.1.2",
     "pinia": "^3.0.3",
     "tailwindcss": "^4.1.13",
     "vue": "^3.5.21",
-    "vue-router": "^4.5.1"
+    "vue-router": "^4.5.1",
+    "zod": "^4.1.9"
   },
   "devDependencies": {
+    "@nuxt/schema": "^4.1.2",
     "@nuxt/test-utils": "^3.19.2",
     "@pinia/testing": "^1.0.2",
     "@vue/test-utils": "^2.4.6",
     "happy-dom": "^18.0.1",
-    "nuxt-mcp": "^0.2.4",
     "playwright-core": "^1.55.0",
     "vitest": "^3.2.4"
   }
