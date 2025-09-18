@@ -27,6 +27,18 @@ To run the development server:
 bun dev
 ```
 
+To test the development server:
+
+```bash
+bun run test
+```
+
+To test E2E the development server:
+
+```bash
+bun run test:e2e
+```
+
 The application will be available at [http://localhost:3000](http://localhost:3000).
 
 **Production:**

@@ -27,6 +27,11 @@
     {
       label: 'FAQ',
       to: '#faq'
+    },
+    {
+      label: 'About',
+      to: '/about',
+      icon: 'lucide:info'
     }
   ]);
 </script>
