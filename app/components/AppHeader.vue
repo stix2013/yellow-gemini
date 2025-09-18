@@ -26,7 +26,8 @@
     },
     {
       label: 'FAQ',
-      to: '/faq'
+      to: '/faq',
+      icon: 'lucide:help-circle'
     },
     {
       label: 'About',
