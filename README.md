@@ -6,12 +6,11 @@ This is a Nuxt 4 project using Bun as the package manager.
 
 This is a Nuxt 4 project with Bun. Nuxt 4 is a framework for creating Vue 3 applications. It is configured with several Nuxt modules, including:
 
-*   **@nuxt/content:** For content-driven websites.
-*   **@nuxt/eslint:** For linting and code style.
-*   **@nuxt/image:** for image optimization.
-*   **@nuxt/scripts:** for managing third-party scripts.
-*   **@nuxt/test-utils:** For testing.
-*   **@nuxt/ui:** For UI components.
+*   **@nuxt/test-utils:** For testing Nuxt applications.
+*   **@pinia/nuxt:** For integrating Pinia for state management.
+*   **@nuxt/ui:** For building user interfaces with a set of UI components.
+*   **@nuxt/icon:** For using and managing icons.
+*   **@nuxt/fonts:** For optimizing and managing fonts.
 
 The main application entry point is `app/app.vue`.
 
@@ -68,7 +67,7 @@ bun test
 *   **Package Manager:** This project uses `bun` as the package manager.
 *   **Linting:** ESLint is used for linting. The configuration is in `eslint.config.mjs`.
 *   **TypeScript:** The project uses TypeScript. The configuration is in `tsconfig.json`.
-*   Use Context7 MCP to search document first after that use tools GoogleSearch
+*   Use `search_nuxt_docs` to search the Nuxt documentation.
 *   Do not run `bun dev` direct after finish create or modify files.
 *   Bun automatically loads .env, so don't use dotenv.
 

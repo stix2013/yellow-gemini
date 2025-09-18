@@ -49,6 +49,7 @@ bun preview
 *   **Linting:** ESLint is used for linting. The configuration is in `eslint.config.mjs`.
 *   **TypeScript:** The project uses TypeScript. The configuration is in `tsconfig.json`.
 *   Use Context7 MCP to search document first after that use tools GoogleSearch
+*   Use Nuxt MCP to search about  NUxt configuration and Nuxt tools
 *   Do not run `bun dev` direct after finish create or modify files.
 *   Bun automatically loads .env, so don't use dotenv.
 
