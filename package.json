@@ -9,7 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "mcp": "DEBUG=nuxt:mcp:server,vite:mcp:server PORT=4000 nuxi dev",
-    "test": "vitest --project nuxt",
+    "test": "vitest",
     "test:e2e": "vitest --config ./vitest.config.e2e.ts"
   },
   "dependencies": {
@@ -34,6 +34,7 @@
     "@vue/test-utils": "^2.4.6",
     "happy-dom": "^18.0.1",
     "playwright-core": "^1.55.0",
-    "vitest": "^3.2.4"
+    "vitest": "^3.2.4",
+    "vitest-environment-nuxt": "^1.0.1"
   }
 }

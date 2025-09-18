@@ -1,14 +1,13 @@
-
 // tests/components/AppFooter.nuxt.spec.ts
 import { describe, it, expect } from 'vitest'
 import { mountSuspended } from '@nuxt/test-utils/runtime'
-import AppHeader from '../../app/components/AppHeader.vue'
+import AppFooter from '../../app/components/AppFooter.vue'
 
-describe('App Header Test', async () => {
+describe('AppFooter', async () => {
   it('can mount some component', async () => {
-    const component = await mountSuspended(AppHeader)
+    const component = await mountSuspended(AppFooter)
     expect(component.text()).toMatchInlineSnapshot(
-      '"YellowHomeFeaturesPricingTestimonialsFAQAbout"'
+      '"Copyright © 2025"'
     )
   })
 })
