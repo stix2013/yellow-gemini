@@ -26,7 +26,7 @@
     },
     {
       label: 'FAQ',
-      to: '#faq'
+      to: '/faq'
     },
     {
       label: 'About',
