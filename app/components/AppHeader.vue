@@ -12,6 +12,11 @@
       icon: 'lucide:home'
     },
     {
+      label: 'Modules',
+      to: '/modules',
+      icon: 'lucide:layout-grid'
+    },
+    {
       label: 'Features',
       to: '#features',
       // icon: 'lucide:home'
