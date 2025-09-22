@@ -1,10 +1,12 @@
 <script setup lang="ts">
+  // Defines the structure for a navigation link.
   interface LinkMenu {
     label: string;
     to: string;
     icon?: string;
   }
 
+  // Navigation links for the header.
   const links = ref<LinkMenu[]>([
         {
       label: 'Home',
@@ -16,19 +18,7 @@
       to: '/modules',
       icon: 'lucide:layout-grid'
     },
-    {
-      label: 'Features',
-      to: '#features',
-      // icon: 'lucide:home'
-    },
-    {
-      label: 'Pricing',
-      to: '#pricing'
-    },
-    {
-      label: 'Testimonials',
-      to: '#testimonials'
-    },
+
     {
       label: 'FAQ',
       to: '/faq',
@@ -42,7 +32,9 @@
   ]);
 </script>
 <template>
+    <!-- Application Header -->
     <UHeader :links="links">
+      <!-- Header: Left side -->
       <template #left>
         <div class="flex items-center">
           <img src="/icon.svg" class="h-8 w-8 mr-2" alt="Logo" />
@@ -50,6 +42,7 @@
         </div>
       </template>
 
+      <!-- Header: Right side (Navigation) -->
       <template #right>
         <UButton v-for="link in links" color="primary" variant="ghost" :icon="link.icon" :to="link.to" :label="link.label"/>
       </template>
