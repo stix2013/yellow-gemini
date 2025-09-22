@@ -60,8 +60,8 @@ bun preview
 *   **Package Manager:** This project uses `bun` as the package manager.
 *   **Linting:** ESLint is used for linting. The configuration is in `eslint.config.mjs`.
 *   **TypeScript:** The project uses TypeScript. The configuration is in `tsconfig.json`.
-*   Use Context7 MCP to search document first after that use tools GoogleSearch
-*   Use Nuxt MCP to search about  NUxt configuration and Nuxt tools
+*   Use MCP servers instead of `GoogleSearch` and `web_fetch` when possible.
+
 *   Do not run `bun dev` direct after finish create or modify files.
 *   Bun automatically loads .env, so don't use dotenv.
 
@@ -296,3 +296,11 @@ The project has been migrated from `@nuxt/ui-pro` to `@nuxt/ui`. The following c
 3.  **`vite.config.ts`:** This file was not found in the project, so no changes were made.
 4.  **`app.config.ts`:** The `ui` key was already in use, and `uiPro` was not present, so no changes were made.
 5.  **`app/assets/css/main.css`:** The `@import "@nuxt/ui";` was already present, and `@import "@nuxt/ui-pro";` was not found, so no changes were made.
+
+# MCP Servers
+
+This local Gemini CLI setting is configured to use the following MCP servers:
+
+*   **Context7:** Used for searching documentation for various libraries and packages. You can use the `resolve_library_id` and `get_library_docs` tools to interact with this server.
+*   **Nuxt:** Used for searching the Nuxt documentation. You can use the `search_nuxt_docs` and `list_nuxt_modules` tools to interact with this server.
+*   **GoogleSearch:** Used for searching the web. You can use the `google_web_search` tool to interact with this server.
