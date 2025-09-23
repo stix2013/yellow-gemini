@@ -10,5 +10,12 @@ describe('App Header Test', async () => {
     expect(component.text()).toMatchInlineSnapshot(
       `"YellowHomeFAQAbout"`
     )
+
+    const links = component.findAll('a')
+    expect(links.length).toBeGreaterThan(0)
+    expect(links[0].attributes('href')).toBe('/')
+    
+    const moduleLink = links.find(link => link.text().includes('Modules'))
+    expect(moduleLink).toBeUndefined()
   })
 })
