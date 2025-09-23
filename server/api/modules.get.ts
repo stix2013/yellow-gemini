@@ -1,5 +1,6 @@
+import { listNuxtModules } from '~/server/utils/modules';
+
 export default defineEventHandler(async () => {
-  // @ts-ignore
-  const modules = await list_nuxt_modules()
-  return modules
-})
+  const modules = await listNuxtModules();
+  return modules;
+});
