@@ -14,12 +14,6 @@
       icon: 'lucide:home'
     },
     {
-      label: 'Modules',
-      to: '/modules',
-      icon: 'lucide:layout-grid'
-    },
-
-    {
       label: 'FAQ',
       to: '/faq',
       icon: 'lucide:help-circle'

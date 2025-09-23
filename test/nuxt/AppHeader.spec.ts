@@ -8,7 +8,7 @@ describe('App Header Test', async () => {
   it('can mount some component', async () => {
     const component = await mountSuspended(AppHeader)
     expect(component.text()).toMatchInlineSnapshot(
-      `"YellowHomeModulesFAQAbout"`
+      `"YellowHomeFAQAbout"`
     )
   })
 })
