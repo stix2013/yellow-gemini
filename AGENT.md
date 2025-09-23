@@ -24,7 +24,7 @@ bun install
 To run the development server:
 
 ```bash
-bun dev
+bun run dev
 ```
 
 To test the development server:
@@ -46,13 +46,13 @@ The application will be available at [http://localhost:3000](http://localhost:30
 To build the application for production:
 
 ```bash
-bun build
+bun run build
 ```
 
 To preview the production build:
 
 ```bash
-bun preview
+bun run preview
 ```
 
 # Development Conventions
