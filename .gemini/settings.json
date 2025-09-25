@@ -27,6 +27,15 @@
     "nuxt-ui": {
       "type": "http",
       "url": "https://ui4.nuxt.com/mcp"
+    },
+    "bun-dev": {
+        "command": "bun",
+        "args": [
+            "/home/stevan/projects/AI/mcp/mcp-bun/dist/mcp=bun.js"
+        ],
+        "env": {
+            "DISABLE_NOTIFICATIONS": "true"
+        }
     }
   },
   "tools": {
