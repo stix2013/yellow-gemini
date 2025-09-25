@@ -54,7 +54,7 @@ bun preview
 
 ## Testing
 
-This project uses `vitest` for testing. Test files are located in the `tests` directory.
+This project uses `vitest` for testing. Test files are located in the `test` directory.
 
 To run the tests:
 
