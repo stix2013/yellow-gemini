@@ -17,10 +17,6 @@ Yellow is a Nuxt 4 application built with Bun. It leverages several Nuxt modules
 
 The main application entry point is `app/app.vue`.
 
-### Bun API
-
-See [BUN.md](./BUN.md) for details.
-
 ---
 
 ## 4. Project Structure
